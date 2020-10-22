@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 
-.video {
+#video {
     position: relative;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@ html {
     background-size: cover;
 }
 
-.bio {
+#bio {
 
     color: #07181D;
     top: 20rem;
@@ -45,7 +45,7 @@ html {
     position: relative;
 }
 
-.releases {
+#releases {
     color: #F7F7FF;
     top: 20rem;
     margin-left: auto;
@@ -55,7 +55,7 @@ html {
     position: relative;
 }
 
-.releases h1 {
+#releases h1 {
     color: #fff6e3;
 }
 
@@ -79,7 +79,7 @@ h2 {
 
 
 
-.title {
+header {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -90,8 +90,12 @@ h2 {
 }
 
 
+main {
+    margin: 0;
+    height: 100%;
+}
 
-.quote {
+#quote {
     height: 100%;
     margin-top: 0%;
     top: 7rem;
@@ -105,7 +109,7 @@ h2 {
     padding-top: 2em;
 }
 
-.quote p {
+#quote p {
     text-align: right;
     margin-right: 5em;
 }
@@ -120,7 +124,7 @@ h2 {
     transform: translate(0%, 20%);
 }
 
-.why {
+#why {
     color: #F7F7FF;
     width: 50rem;
 
@@ -134,7 +138,7 @@ h2 {
     position: relative;
 }
 
-d {
+footer {
     position: fixed;
     background-color: #117396;
     opacity: 10%;
@@ -144,9 +148,10 @@ d {
     text-align: center;
     color: #F7F7FF;
     width: 100%;
+    transition: 0.3s;
 }
 
-d:hover {
+footer:hover {
     opacity: 100%;
 }
 
@@ -190,4 +195,33 @@ a:active {
 
 #btn:hover {
     opacity: 100%;
+}
+
+nav {
+    z-index: 5;
+    color: #F7F7FF;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#quote p+a {
+    text-align: right;
+    transition: 0.3s;
+    font-weight: 700;
+    margin-right: 5em;
+    display: block;
+
+}
+
+#quote p+a:hover {
+    color: #1DB954;
 }
